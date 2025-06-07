@@ -1,5 +1,6 @@
-/node_modules
+/node_modules/
 /vite.config.js
 /package-lock.json
 /package.json
 /eslint.config.js
+
