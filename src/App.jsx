@@ -10,14 +10,12 @@ import ProductDetails from "./pages/ProductDetails.jsx"
 
 const router = createBrowserRouter([{
     path: "/", element: <Layout/>, children: [
-
         {path: "", element: <Home/>},
         {path: "about", element: <About/>},
         {path: "cart", element: <Cart/>},
         {path: "categories", element: <Categories/>},
         {path: "productDetails", element: <ProductDetails/>},
         {path: "*", element: <NotFound/>},
-
     ]
 }]);
 
