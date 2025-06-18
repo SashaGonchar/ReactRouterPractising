@@ -5,18 +5,20 @@ function Home() {
     return (
         <div>
             <h1>Categories</h1>
-            <ul style={{display: "flex"}}>{categories.map((category) => (
-                <li key={category.id}>
-                <Link to={`/category/${category.name}`}>
-                    {category.name}
-                    <img src={category.img} alt={category.name} style={{width:"150px"}}/>
-                </Link>
-                </li>
-            ))}
-        </ul>
+            <ul style={{display: "flex"}}>
+                {categories.map((category) => (
+                    <li key={category.id}>
+                        <Link to={`/category/${category.name}`}>
+                            {category.name}
+                            <img src={category.img} alt={category.name} style={{width: "150px"}}/>
+                        </Link>
+                    </li>
+                ))}
 
-</div>
-);
+            </ul>
+
+        </div>
+    );
 }
 
 export default Home
