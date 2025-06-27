@@ -10,7 +10,7 @@ import ProductDetails from "./pages/ProductDetails.jsx"
 
 const router = createBrowserRouter([{
     path: "/", element: <Layout/>, children: [
-        {path: "", element: <Home/>},
+        {index: true, element: <Home/>},
         {path: "about", element: <About/>},
         {path: "cart", element: <Cart/>},
         {path: "category/:categoryId", element: <Category/>},
