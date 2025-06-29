@@ -7,12 +7,14 @@ import Cart from "./pages/Cart.jsx"
 import Category from "./pages/Category.jsx"
 import NotFound from "./pages/NotFound.jsx"
 import ProductDetails from "./pages/ProductDetails.jsx"
+import Thanks from "./pages/Thanks.jsx";
 
 const router = createBrowserRouter([{
     path: "/", element: <Layout/>, children: [
         {index: true, element: <Home/>},
         {path: "about", element: <About/>},
         {path: "cart", element: <Cart/>},
+        {path: "thanks", element: <Thanks/>},
         {path: "category/:categoryId", element: <Category/>},
         {path: "product/:productId", element: <ProductDetails/>},
         {path: "*", element: <NotFound/>},
